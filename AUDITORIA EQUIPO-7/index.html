@@ -1,0 +1,30 @@
+<?php	
+session_start();
+if(empty($_SESSION['usuario'])){
+header("location:index.html?errorlogin");
+}
+?>
+<html>
+<head>
+  <title>SISTEMA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+<!-- Menú de navegación del sitio -->
+<ul class="navbar">
+   <li><a href="infocap3.php"><input type="button" value="INFORMACION SOBRE CAPITULO 3" class="boton"></a>   
+   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 4" class="boton"></a>
+   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 5" class="boton"></a>
+   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 6" class="boton"></a>
+   <li><a href="dictamenfinal.php"><input type="button" value="DICTAMEN FINAL" class="boton"></a>
+   <li><a href="fundamentoteoricoequipo7.php"><input type="button" value="FUNDAMENTO TEORICO EQUIPO 7" class="boton"></a>
+
+</ul>
+
+
+
+</body>
+</html>
