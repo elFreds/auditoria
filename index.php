@@ -22,13 +22,13 @@
 					<div id="menu">
 						<ul>
 							<li><a href="sesionAdmin.php">Administrador</a></li>
-							<li><a href="planeacion.php">Planeacion de la auditoria</a></li>
+							<li><a href="planeacion.php" target ="cont">Planeacion de la auditoria</a></li>
 							<!--Aqui debes poner los links para cada tema el efecto se hace automáticamente -->
 						</ul>
 					</div>
 	</div>
 	<div id="contenido">
-	
+	<iframe name ="cont" width="927px" height="700" scrolling="yes"></iframe>
 	<!--Aqui debes colocar todo lo relacionado a tu tema -->			
 	
 	</div>	
