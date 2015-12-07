@@ -1,0 +1,11 @@
+<html>
+ <head><title>FUNDAMENTO TEORICO </title> </head>
+  <body>
+<center><h1>
+para realizar este formulario deacuerdo al capitulo 2
+se necesita asignar todas las actividades, para que posteriormente 
+un auditor las pueda evaluar sabiendo asi en que dias y a que
+empresa y que auditores tienen que evaluar cada actividad.
+  </h1></center>
+</body>
+</html>
