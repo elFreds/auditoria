@@ -19,8 +19,8 @@
 							<li><a href="administracion.php">Administrar</a></li>
 							<li><a href="planeacion/planeacion.php" target ="cont">Planeacion de la auditoria</a></li>
 							<li><a href="capitulo4/capitulo4.php">Capitulo 4</a></li>
-							<li><a href="AUDITORIA EQUIPO-7/index.html" target ="cont">EQUIPO7</a></li>
-							<li><a href="AUDITORIA EQUIPO-7/index.html">Interpretacion de la Informacion</a></li>
+							<li><a href="AUDITORIA EQUIPO-7/index.html" target ="cont">EQUIPO7 Interpretacion de la Informacion</a></li>
+						
 							<!--Aqui debes poner los links para cada tema el efecto se hace automáticamente -->
 						</ul>
 					</div>
@@ -28,16 +28,7 @@
 	<div id="cont">
 	<iframe name ="cont" width="927px" height="700" scrolling="yes"></iframe>
 	<!--Aqui debes colocar todo lo relacionado a tu tema -->
-	<!-- Comienzo equipo 7 -->
-	<ul>
-   <li><a href="AUDITORIA EQUIPO-7/infocap3.php"><input type="button" value="INFORMACION SOBRE CAPITULO 3" class="boton"></a>   
-   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 4" class="boton"></a>
-   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 5" class="boton"></a>
-   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 6" class="boton"></a>
-   <li><a href="AUDITORIA EQUIPO-7/dictamenfinal.php"><input type="button" value="DICTAMEN FINAL" class="boton"></a>
-   <li><a href="AUDITORIA EQUIPO-7/fundamentoteoricoequipo7.php"><input type="button" value="FUNDAMENTO TEORICO EQUIPO 7" class="boton"></a>
-</ul>
-	<!-- fin equipo 7 -->
+	
 	
 	</div>	
 	<div class="nofloat">
