@@ -19,7 +19,7 @@
 							<li><a href="administracion.php">Administrar</a></li>
 							<li><a href="planeacion/planeacion.php" target ="cont">Planeacion de la auditoria</a></li>
 							<li><a href="capitulo4/capitulo4.php">Capitulo 4</a></li>
-							<li><a href="AUDITORIA EQUIPO-7/index.html" target ="cont">Capitulo 7 Interpretacion de la Informacion</a></li>
+							<li><a href="AUDITORIA EQUIPO-7/index.php" target ="cont">Capitulo 7 Interpretacion de la Informacion</a></li>
 						
 							<!--Aqui debes poner los links para cada tema el efecto se hace automáticamente -->
 						</ul>
