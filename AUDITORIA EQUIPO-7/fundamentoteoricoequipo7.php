@@ -135,7 +135,7 @@ y asi poder entregar el dictamen final, que a su vez contendra informacion de la
 
 <br> 
 <?php
-	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.html';\">";
+	echo"<input type=\"button\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
 	?>
 
 	
