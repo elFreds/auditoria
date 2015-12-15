@@ -36,6 +36,7 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 			}
 			?>
 	</select><br><p>
+</tr><tr>
 	<td width="15%"> TEMAS:
         <td>
 	<select name='nomtema'>
