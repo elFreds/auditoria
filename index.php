@@ -9,6 +9,7 @@
 	<body>
 	<div id="principal">
 	<div id="cabecera">
+		<img src="planeacion/images/auditoria.jpg"/>
 	<div id="logo">
 		<img src="imagenes/redes2.jpg" alt="logotipo" width="100px" height="100px" />
 	</div>
