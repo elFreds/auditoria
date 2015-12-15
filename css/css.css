@@ -30,10 +30,15 @@ div#cabecera{
 	height: 150px;
 	border-radius: 0px 20px 20px 20px;
 }
+img{
+height: 150px;
+width:90%;
+float: right;
+}
 div#logo{
 	width: 100px;
 	height: 100px;
-	padding: 25px 40px;
+	padding: 0px 0px;
 }
 div#cont{
 		width: 931px;
