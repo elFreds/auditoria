@@ -17,15 +17,6 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 		    ?>
 	</head>
 <body>
-<div id="encabezado"><img src="images/auditoria.jpg"/>
-
-<center><h1>FUNDAMENTO TEORICO 
-para realizar este formulario deacuerdo al capitulo 2
-se necesita asignar todas las actividades, para que posteriormente 
-un auditor las pueda evaluar sabiendo asi en que dias y a que
-empresa y que auditores tienen que evaluar cada actividad.
-  </h1></center>
-</div>
 <div id="cont">
     <form method=POST action="asignar.php" name="index">
 	<table>
