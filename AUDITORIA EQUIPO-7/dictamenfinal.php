@@ -1,29 +1,26 @@
-<?php	
-session_start();
-if(empty($_SESSION['usuario'])){
-header("location:index.html?errorlogin");
-}
-?>
+
 <?php  
 include("conexion.php");
 
-$sql="SELECT * FROM auditores where id_Auditor=1";
+$sql="SELECT * FROM auditores where id_audi=1";
 $datos=mysql_query($sql,$connexion); 
 
 $sql="SELECT * FROM empresaauditora where id_EmpresaAuditora=1";
 $datos1=mysql_query($sql,$connexion); 
 
-$sql="SELECT * FROM empresaauditada where id_EmpresaAuditada=1";
+$sql="SELECT * FROM empresas where id_emp=1";
 $datos2=mysql_query($sql,$connexion); 
 
+$sql="SELECT * FROM dictamenfinal where id_DictamenFinal=1";
+$datos3=mysql_query($sql,$connexion); 
 
 ?>
 <html>
  <head>
   <title>  DICTAMEN AUDITORIA </title>
-  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" type="text/css" href="css/css.css"/>
  </head>
-<body bgcolor="#58FA58">
+<body>
 <center>
 <MARQUEE BEHAVIOR=alternate WIDTH=70%>
 <FONT FACE=arial COLOR=###### SIZE=8>
@@ -32,7 +29,7 @@ DICTAMEN FINAL
 <hr>
 
 <table border="6" align="center">
-<caption>AUDITOR </caption>
+
 <th> Empresa Auditora </th>
 <th> Empresa Auditada </th>
    <th> Nombre del Auditor </th>
@@ -41,6 +38,9 @@ DICTAMEN FINAL
   <th> Fecha Inicio </th>
   <th> Fecha Fin </th>
   <th> Fecha de Emicion </th>
+   <th> Observaciones </th>
+    <th> Recomendaciones </th>
+	 <th> Dictamen </th>
  
 <?php
 while ($row=mysql_fetch_array($datos)) { 
@@ -51,6 +51,9 @@ while ($row1=mysql_fetch_array($datos1)) {
 <?php
 while ($row2=mysql_fetch_array($datos2)) {
 ?>
+<?php
+while ($row3=mysql_fetch_array($datos3)) {
+?>
 
 <tr>
       <td> <?php echo $NombreComercial=$row1['NombreComercial']; ?> </td>
@@ -58,11 +61,14 @@ while ($row2=mysql_fetch_array($datos2)) {
    	  <td> <?php echo $Nombre=$row['Nombre']; ?> </td>
 	  <td> <?php echo $ApellidoPaterno=$row['ApellidoPaterno']; ?> </td>	
       <td> <?php echo $ApellidoMaterno=$row['ApellidoMaterno']; ?> </td>	
-      <td> 19-01-2015 </td>	  
-	  <td> 19-02-2015 </td>	
-	  <td> 20-02-2015 </td>	
+      <td> <?php echo $FechaInicioAuditoria=$row3['FechaInicioAuditoria']; ?> </td> 
+      <td> <?php echo $FechaFinAuditoria=$row3['FechaFinAuditoria']; ?> </td>	  
+	  <td> 15-12-2015 </td>	
+	  <td> <?php echo $Observaciones=$row3['Observaciones']; ?> </td>
+	  <td> <?php echo $Recomendaciones=$row3['Recomendaciones']; ?> </td>
+	  <td> <?php echo $Dictamen=$row3['Dictamen']; ?> </td>
 	  <?php
-      }}
+      }}}
 	  }
 	  mysql_close($connexion);
 ?>
@@ -70,6 +76,7 @@ while ($row2=mysql_fetch_array($datos2)) {
 </table>
 <table align="center" border="8px">
 <tr>
+
 <td rowspan="2">Secuencia</strong></td>
   <td rowspan="2">Punto de Observacion</strong></td>
   <td rowspan="2">Recomendacion</strong></td>
@@ -137,7 +144,7 @@ while ($row2=mysql_fetch_array($datos2)) {
 <Textarea style="height: 200px !important; width: 500px !important;"> Comentarios </textarea>
 <br> 
 <?php
-	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.html';\">";
+	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
 	?>
 
 	

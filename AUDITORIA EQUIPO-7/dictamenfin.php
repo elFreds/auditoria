@@ -20,7 +20,7 @@ $datos4=mysql_query($sql,$connexion);
 ?>
 <html>
  <head>
-  <title>  INFORMACION CAPITULO 3 </title>
+  <title>  dictamenfinal </title>
   <link rel="stylesheet" type="text/css" href="css/css.css"/>
  </head>
 <body>

@@ -17,11 +17,12 @@ INTERPRETACION DE LA INFORMACION
 
 <ul>
    <li><a href="fundamentoteoricoequipo7.php"><input type="button" value="FUNDAMENTO TEORICO CAPITULO 7"></a>
-   <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 3"></a>   
+    <li><a href="forNueEmpresa.php"><input type="button" value="REGISTRAR NUEVA EMPRESA A AUDITADA"></a>
+   <li><a href="infocap3.php"><input type="button" value="INFORMACION SOBRE CAPITULO 3"></a>   
    <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 4"></a>
    <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 5"></a>
    <li><a href=""><input type="button" value="INFORMACION SOBRE CAPITULO 6"></a>
-   <li><a href=""><input type="button" value="DICTAMEN FINAL"></a>
+   <li><a href="dictamenfinal.php"><input type="button" value="DICTAMEN FINAL"></a>
   
 </ul>
 
