@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-	<head>
-		<link href="css/stilo.css" rel="stylesheet" type="text/css">
+	<head>		
 		<link href="css/tabla.css" rel="stylesheet" type="text/css">
 		<title>PLANEACION</title>
 		<?php 
@@ -68,6 +67,7 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 			}
 			?>
 	</select><br><p>
+</tr><tr>
 <td width="15%"> ACTIVIDADES:
         <td>
 	<select name='nomact'>
@@ -100,7 +100,7 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 			}
 			?>
 	</select><br><p><p>
-							
+</tr><tr>				
 <td width="15%"> AUDITORES:
         <td>
 	<select name='nomaudi'>

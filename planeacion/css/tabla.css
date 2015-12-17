@@ -1,3 +1,15 @@
+#cont{
+		width:90%;
+		height:100%;
+		margin: 0px 7px;
+		float:left;
+	}
+#tabla{
+		width:90%;
+		height:100%;
+		margin: 2px auto;
+		float:left;
+}
 table {
     border-collapse: collapse;
     border-spacing: 0;
