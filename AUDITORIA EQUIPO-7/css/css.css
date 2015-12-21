@@ -1,0 +1,189 @@
+body{
+	background-color:#e6e6e6;
+	margin: 30px auto;
+	padding: 0;
+}
+
+
+td {
+border-top:1p solid black;
+border-bottom:1px solid black;
+padding:8px;
+text-align:center
+}
+.titulo {
+background:#000;
+color:#ccc;
+font-size:15pt;
+}
+
+
+div#principal{
+	margin: 0 auto;
+	width:1200px;
+
+}
+div#cabecera{
+	text-align: center;
+	margin: 0;
+	background-color: #6b6b6b;
+	height: 150px;
+	border-radius: 0px 20px 20px 20px;
+}
+img{
+height: 150px;
+width:90%;
+float: right;
+}
+div#logo{
+	width: 100px;
+	height: 100px;
+	padding: 0px 0px;
+}
+div#cont{
+		width: 931px;
+		overflow: auto;
+		float: right;
+		position: static;
+		background-color: #a6a6a6;
+		min-height: 470;
+		margin-top: 20px;
+		border-radius: 0px 20px 20px 20px;
+}
+.pie{
+		text-align: center;
+		margin: 0;
+		background-color: #63B1D2;
+		height: 50px;
+		padding: 3px 0 3px 0;
+		font-family: Arila, verdana;
+		border-radius: 0px 20px 20px 20px;
+		margin-top: 20px;
+}
+
+form#datos {
+	width:25%;
+	border: #ccc;
+	margin:20px;
+	padding:20px;
+}
+
+div#lateral{
+	background-color: black;
+	width: 255px;
+	margin-top: 20px;
+	float: left;
+	min-height: 470;
+	border-radius: 0px 20px 20px 20px;
+}
+.nofloat{
+	clear: both;
+}
+div#form{
+	color:white;
+}
+div#menu{
+	width:255px;
+	margin-top:0px;
+	height:auto;
+	float: left;
+}
+
+div#menu ul{
+	list-style-type: none;
+}
+
+div#menu ul li{
+	margin-top:15px;
+	font-family:thahoma;
+	font-size:18px;
+	background:#639bb3;
+	width:160px;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-radius:0px 20px 20px 20px;
+	padding-left:20px;
+	box-shadow:5px 0px 10px #939393;
+	-webkit-transition:padding-left 0.6s;
+	color:white;
+}
+
+div#menu ul li:hover{
+	padding-left:50px;
+}
+div#menu a{
+	color: #fff;
+	text-decoration: none;
+}
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	-webkit-appearance: none;
+}
+/* ---------- LOGIN ---------- */
+
+#datos {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#datos h2 {
+	background-color: #63B1D2;
+	-webkit-border-radius: 20px 20px 0 0;
+	-moz-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	font-size: 28px;
+	padding: 6px 26px;
+	margin: 0;
+}
+
+#datos h2 span[class*="fontawesome-"] {
+	margin-right: 14px;
+}
+
+#datos fieldset {
+	background-color: #fff;
+	-webkit-border-radius: 0 0 20px 20px;
+	-moz-border-radius: 0 0 20px 20px;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#datos fieldset p {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#datos fieldset p:last-child {
+	margin-bottom: 0;
+}
+
+#datos fieldset input {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#datos fieldset input[type="text"], #datos fieldset input[type="password"] {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+#datos fieldset input[type="button"] {
+	background-color: #33cc77;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 100px;
+}
+
+#datos fieldset input[type="button"]:hover {
+	background-color: #63B1D2;
+}

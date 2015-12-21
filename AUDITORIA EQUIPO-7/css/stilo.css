@@ -1,0 +1,20 @@
+#encabezado{
+		width:100%;
+		height:250px;
+	}
+#cont{
+		width:90%;
+		height:100%;
+		margin: 120px 7px;
+		float:left;
+	}
+	img{
+		width:100%;
+		height:250px;
+	}
+#tabla{
+		width:90%;
+		height:100%;
+		margin: 2px auto;
+		float:left;
+}

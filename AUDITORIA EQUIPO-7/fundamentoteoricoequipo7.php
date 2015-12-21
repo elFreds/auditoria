@@ -134,10 +134,11 @@ y asi poder entregar el dictamen final, que a su vez contendra informacion de la
 
 
 <br> 
+<center>
 <?php
 	echo"<input type=\"button\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
 	?>
-
+</center>
 	
 </center>
 </html>
