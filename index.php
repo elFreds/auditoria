@@ -27,7 +27,9 @@
          <li><a href="planeacion/fundamento/Usuario.php" target="cont"><span>Pruebas de control del usuario</span></a></li>
          <li><a href="planeacion/fundamento/Sustantivas.php" target="cont"><span>Pruebas sustantivas</span></a></li>
 </ul>
-							<li><a href="capitulo4/capitulo4.php">Capitulo 4</a></li>
+							
+                            <li><a href="capitulo_3/index.php" target="cont">Capítulo 3</a></li>
+					        <li><a href="capitulo4/capitulo4.php">Capitulo 4</a></li>
 							<li><a href="capitulo5/index.php">Capitulo 5</a></li>
 							<li><a href="AUDITORIA EQUIPO-7/index.php" target ="cont">Capitulo 7 Interpretacion de la Informacion</a></li>
 						
