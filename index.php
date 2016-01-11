@@ -13,7 +13,7 @@
 		<img src="planeacion/images/auditoria.jpg"/>
 	</div>
 	<div id="lateral">
-		<iframe name ="lateral"></iframe>
+		
 					<div id="menu">
 						<ul class="nav">
 							<li><a href="administracion.php">Administrar</a>
