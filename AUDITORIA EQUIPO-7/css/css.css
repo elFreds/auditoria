@@ -32,7 +32,7 @@ div#cabecera{
 }
 img{
 height: 150px;
-width:90%;
+width:100%;
 float: right;
 }
 div#logo{
@@ -94,7 +94,7 @@ div#menu ul{
 }
 
 div#menu ul li{
-	margin-top:15px;
+	margin-top:3px;
 	font-family:thahoma;
 	font-size:18px;
 	background:#639bb3;
@@ -104,7 +104,7 @@ div#menu ul li{
 	border-radius:0px 20px 20px 20px;
 	padding-left:20px;
 	box-shadow:5px 0px 10px #939393;
-	-webkit-transition:padding-left 0.6s;
+	-webkit-transition:padding-left 0.4s;
 	color:white;
 }
 
