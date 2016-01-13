@@ -1,26 +1,26 @@
 <?php
 $conexion = mysql_connect("localhost","root","") or die ("error servidor");
 mysql_select_db("auditoria",$conexion) or die ("error seleccion");
-$datos=mysql_query("SELECT * FROM pregunta where id_subrub=615",$conexion) or die ("error consulta");
+$datos=mysql_query("SELECT * FROM preguntas where id_subsr=615",$conexion) or die ("error consulta");
 ?>
 
 <center><font color="RED" size= 6>Seguridad contra desastres provocados por agua</font></a><BR><BR>
 <center><table border="2" width="90%">
 	<td class="titulos">ID RUBRO: </td>
 	<td class="titulos">ID SUBRUBRO: </td>
+	<td class="titulos">ID SUBSUBRUBRO: </td>
 	<td class="titulos">ID PREGUNTA: </td>
 	<td class="titulos">NOMBRE DEL PREGUNTA:</td>
-	<td class="titulos">RESPUESTA:</td>
 		<td class="titulos">OPCION</td>
 	<?php
 	while($datosarray=mysql_fetch_array($datos)){
 	?>
 <tr>
-<td><?php echo $datosarray['id_rub']; ?> </td>
-<td><?php echo $datosarray['id_subrub']; ?> </td>
-<td><?php echo $datosarray['id_pre']; ?> </td>
-<td><?php echo $datosarray['pre']; ?> </td>
-<td><?php echo $datosarray['res']; ?> </td>
+<td><?php echo $datosarray['id_rubro']; ?> </td>
+<td><?php echo $datosarray['id_subr']; ?> </td>
+<td><?php echo $datosarray['id_subsr']; ?> </td>
+<td><?php echo $datosarray['id_preg']; ?> </td>
+<td><?php echo $datosarray['pregunt']; ?> </td>
 
 <td>
 <form name="datos" method="post" action="registrares.php">

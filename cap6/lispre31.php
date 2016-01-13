@@ -1,12 +1,12 @@
 <?php
 $conexion = mysql_connect("localhost","root","") or die ("error servidor");
 mysql_select_db("auditoria",$conexion) or die ("error seleccion");
-$datos=mysql_query("SELECT * FROM preguntas where id_subsr=617",$conexion) or die ("error consulta");
+$datos=mysql_query("SELECT * FROM preguntas where id_subsr=631",$conexion) or die ("error consulta");
 ?>
 
-<center><font color="RED" size= 6>PISO ELEVADO O CÁMARA PLANA</font></a><BR><BR>
+<center><font color="RED" size= 6>Plan de contingencias</font></a><BR><BR>
 <center><table border="2" width="90%">
-	<td class="titulos">ID RUBRO: </td>
+		<td class="titulos">ID RUBRO: </td>
 	<td class="titulos">ID SUBRUBRO: </td>
 	<td class="titulos">ID SUBSUBRUBRO: </td>
 	<td class="titulos">ID PREGUNTA: </td>
