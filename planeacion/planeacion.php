@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-	<head>		
+<html lang=''>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/tabla.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<title>PLANEACION</title>
 		<?php 
     $conexion=  mysql_connect("127.0.0.1","root","");
     mysql_select_db("auditoria",$conexion);
-    $capitulo =  mysql_query("SELECT * FROM capitulos",$conexion);
+    $capitulo =  mysql_query("SELECT * FROM rubros",$conexion);
     $temas =  mysql_query("SELECT * FROM temas",$conexion);
     $subtemas =  mysql_query("SELECT * FROM subtemas",$conexion);
     $actividades =  mysql_query("SELECT * FROM actividades",$conexion);
@@ -16,27 +21,42 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 		    ?>
 	</head>
 <body>
+<div id="cssmenu">
+<ul>
+<li><a href="#"><span> CAPITULO # 2</span></a>
+ <li><a href="#"><span> PLANEACION DE LA AUDITORIA INFORMATICA</span></a>
+<li><li><li class="active has-sub"><a href="#"><span> FUNDAMENTO TEORICO</span></a>
+<ul>
+         <li><a href="fundamento/RevisionPreliminar.php" target="cont"><span>Revision preliminar</span></a></li>
+         <li><a href="fundamento/RevisionDetallada.php" target="cont"><span>Revision detallada</span></a></li>
+         <li><a href="fundamento/Examen.php" target="cont"><span>Examen y evaluacion de la informacion</span></a></li>
+         <li><a href="fundamento/Prueba.php" target="cont"><span>Pruebas de consentimiento</span></a></li>
+         <li><a href="fundamento/Usuario.php" target="cont"><span>Pruebas de control del usuario</span></a></li>
+         <li><a href="fundamento/Sustantivas.php" target="cont"><span>Pruebas sustantivas</span></a></li>
+            </ul>
+         </li>
+</div>
 <div id="cont">
     <form method=POST action="asignar.php" name="index">
 	<table>
 <tr>
         <td width="15%"> CAPITULOS:
         <td>
-	<select name='nomcap'>
+	<select name='rubro'>
         <option value="0"> Elige el capitulo</option>
 			<?php
 			while($arreglo1=mysql_fetch_array($capitulo))
 			{
 			?>
-	<option value="<?php echo $arreglo1['nomcap'];?>">
-			<?php echo $arreglo1['nomcap'];?>
+	<option value="<?php echo $arreglo1['rubro'];?>">
+			<?php echo $arreglo1['rubro'];?>
 	</option>
 			<?php
 			}
 			?>
 	</select><br><p>
 </tr><tr>
-	<td width="15%"> TEMAS:
+	<td width="20%"> TEMAS:
         <td>
 	<select name='nomtema'>
         <option value="0"> Elige el tema</option>
@@ -82,13 +102,12 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 			<?php
 			}
 			?>
-	</select><br>
+	</select><br><p>
 </tr><tr>
-<p>
 <td width="15%"> TIEMPO ESTIMADO:
         <td>
 	<select name='fechas'>
-        <option value="0"> ELIGE LA FECHA</option>
+        <option value="0"> Elige la fecha</option>
 			<?php
 			while($arreglo5=mysql_fetch_array($fechas))
 			{

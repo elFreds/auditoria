@@ -122,7 +122,7 @@ include("conexion.php");
 mysql_set_charset('utf8');
 
 
-$result = mysql_query("SELECT id_preg, pregunt FROM preguntas  where id_subsr=312", $connexion); 
+$result = mysql_query("SELECT id_preg, pregunt, id_resp FROM preguntas  where id_subsr=312", $connexion); 
 echo "<form method=post action='insertar2.php'>";
 echo "<table border = '0'> \n"; 
 echo "<tr><td><b>Clave de pregunta</b></td><td align='center'><b>Pregunta(s)</b></td> <td COLSPAN=2 align='center'><b>Respuestas<b></td></tr>\n"; 
