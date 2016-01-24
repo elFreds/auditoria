@@ -134,7 +134,7 @@ Para poder interpretar la infromacion de los sistemas se debe de evaluar el grad
 <li>Verificar si los resultados son utilizados o no.</li>
 </ul>
 
-<h3>Caacteristicas</h3>
+<h3>Caracteristicas</h3>
 <ul>
 <li>Definido
 <li>Estructurado
