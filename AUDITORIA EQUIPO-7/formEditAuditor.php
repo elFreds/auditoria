@@ -63,17 +63,17 @@
 </div>
 <br></br>
 
-<div id="cabecera">EDITAR EMPRESA AUDITADA</div>
+<div id="cabecera">ACTUALIZAR DATOS AUDITOR</div>
     <div id="texto">
 <?php
 include("conexion.php");
-$datos=mysql_query("SELECT * FROM auditores", $connexion) or die ("No se puede consultar la tabla auditores");
+$datos=mysql_query("SELECT * FROM empresaauditora") or die ("No se puede consultar la tabla puesto");
 $id=$_GET['id'];
-$result=mysql_query("SELECT * FROM empresas inner join auditores on auditores.id_audi=empresas.id_audi where id_emp=$id");
+$result=mysql_query("SELECT * FROM auditores inner join empresaauditora on empresaauditora.id_EmpresaAuditora=auditores.id_EmpresaAuditora where id_audi=$id");
 $row=mysql_fetch_array($result);
 ?>
 
-<form  method="POST" action="editarEmpresaAuditada.php">
+<form  method="POST" action="editarAuditor.php">
 </br>
 </br>
 
@@ -82,20 +82,32 @@ $row=mysql_fetch_array($result);
    <tr>
 
   <tr>
-      <td align="right"> Nombre Comercial: </td>
-	  <td><input name="NombreComercial" type="text" id="NombreComercial" value="<?php echo $row['NombreComercial'];?>"/>
+      <td align="right"> Apellido Paterno: </td>
+	  <td><input name="ApellidoPaterno" type="text" id="ApellidoPaterno" value="<?php echo $row['ApellidoPaterno'];?>"/>
 	  </td>
  </tr>
 
 <tr>
-      <td align="right"> Nombre Fiscal </td>
-	  <td><input name="NombreFiscal" type="text" id="NombreFiscal" value="<?php echo $row['NombreFiscal'];?>"   />
+      <td align="right"> Apellido Materno </td>
+	  <td><input name="ApellidoMaterno" type="text" id="ApellidoMaterno" value="<?php echo $row['ApellidoMaterno'];?>"   />
 </td>
 </tr>
 
 <tr>
-      <td align="right"> Calle Avenida </td>
-	  <td><input name="CalleAvenida" type="text" id="CalleAvenida" value="<?php echo $row['CalleAvenida'];?>"   />
+      <td align="right"> Nombre (s) </td>
+	  <td><input name="Nombre" type="text" id="Nombre" value="<?php echo $row['Nombre'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Edad </td>
+	  <td><input name="Edad" type="text" id="Edad" value="<?php echo $row['Edad'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Pais </td>
+	  <td><input name="Pais" type="text" id="Pais" value="<?php echo $row['Pais'];?>"   />
 </td>
 </tr>
 
@@ -112,8 +124,8 @@ $row=mysql_fetch_array($result);
 </tr>
 
 <tr>
-      <td align="right"> Pais </td>
-	  <td><input name="Pais" type="text" id="Pais" value="<?php echo $row['Pais'];?>"   />
+      <td align="right"> Calle Avenida </td>
+	  <td><input name="CalleAvenida" type="text" id="CalleAvenida" value="<?php echo $row['CalleAvenida'];?>"   />
 </td>
 </tr>
 
@@ -124,34 +136,28 @@ $row=mysql_fetch_array($result);
 </tr>
 
 <tr>
-      <td align="right"> Giro </td>
-	  <td><input name="Giro" type="text" id="Giro" value="<?php echo $row['Giro'];?>"   />
-</td>
-</tr>
-
-<tr>
       <td align="right"> E-mail </td>
 	  <td><input name="Email" type="text" id="Email" value="<?php echo $row['Email'];?>"   />
 </td>
 </tr>
 
 <tr>
-      <td align="right"> Web </td>
-	  <td><input name="Web" type="text" id="Web" value="<?php echo $row['Web'];?>"   />
+      <td align="right"> Sexo </td>
+	  <td><input name="Sexo" type="text" id="Sexo" value="<?php echo $row['Sexo'];?>"   />
 </td>
 </tr>
 
 <tr>
-        <td align="right"> Auditor Encargado de Auditoria</td>
-        <td><select name="Auditor">
-<option value="<?php echo $row['id_audi'];?>">
-               <?php echo $row['Nombre'];?> 
+        <td align="right"> Empresa Responsable de Auditor</td>
+        <td><select name="NombreFiscal">
+<option value="<?php echo $row['id_EmpresaAuditora'];?>">
+               <?php echo $row['NombreFiscal'];?> 
                </option>
 <?php
 while($datosArray1=mysql_fetch_array($datos)){
 ?>
-<option value="<?php echo $datosArray1['id_audi'];?>">
-	<?php echo $datosArray1['Nombre'];?>
+<option value="<?php echo $datosArray1['id_EmpresaAuditora'];?>">
+	<?php echo $datosArray1['NombreFiscal'];?>
 	</option>
 	<?php
 	}
@@ -160,9 +166,8 @@ while($datosArray1=mysql_fetch_array($datos)){
 </td>
 </tr>
 
-<tr>
 <td>
-<input name="id" type="text" style="display:none" value="<?php echo $row['id_emp'];?>" />
+<input name="id" type="text" style="display:none" value="<?php echo $row['id_audi'];?>" />
 <td>
 </tr>
 
@@ -171,7 +176,7 @@ while($datosArray1=mysql_fetch_array($datos)){
 </br>
 <center>
 	<?php
-	echo"<input type=\"button\"class=\"boton\"value=\"CANCELAR\"onclick=\"window.location.href='EmpresasAuditadasRegistradas.php';\">";
+	echo"<input type=\"button\"class=\"boton\"value=\"CANCELAR\"onclick=\"window.location.href='AuditoresRegistrados.php';\">";
 	?>
 	<input type="submit" value="ACEPTAR" class="boton" onclick="validaCampos();"/> 
 	

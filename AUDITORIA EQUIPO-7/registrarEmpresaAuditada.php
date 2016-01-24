@@ -12,7 +12,7 @@ $Email=$_POST['Email'];
 $Web=$_POST['Web'];
 $id_audi=$_POST['id_audi'];
 
-mysql_query("INSERT INTO  `auditoria`.`empresas` (
+mysql_query("INSERT INTO  empresas (
 `id_emp` ,
 `NombreComercial` ,
 `NombreFiscal` ,
@@ -26,7 +26,8 @@ mysql_query("INSERT INTO  `auditoria`.`empresas` (
 `Web`,
 `id_audi`
 )
-VALUES (NULL , '$NombreComercial',  '$NombreFiscal',  '$CalleAvenida',  '$CiudadMunicipio',  '$CodigoPostal',  '$Pais', '$Telefono', '$Giro', '$Email', '$Web', '$id_audi')",$connexion) 
+VALUES (NULL , '$NombreComercial',  '$NombreFiscal',  '$CalleAvenida',  '$CiudadMunicipio',  '$CodigoPostal',  
+'$Pais', '$Telefono', '$Giro', '$Email', '$Web', '$id_audi')",$connexion) 
 or die ("Error al insertar datos");		
  $error=mysql_error();
  
@@ -34,6 +35,6 @@ or die ("Error al insertar datos");
  echo "No se realizo el registro correctamente";
  }else{
  
- header("location:empleadosRegistrados.php");
+ header("location:EmpresasAuditadasRegistradas.php");
  }
  ?>

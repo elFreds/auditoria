@@ -11,7 +11,7 @@ $Email=$_POST['Email'];
 $Web=$_POST['Web'];
 $RFC=$_POST['RFC'];
 
-mysql_query("INSERT INTO  `auditoria`.`empresaauditora` (
+mysql_query("INSERT INTO empresaauditora (
 `id_EmpresaAuditora` ,
 `NombreComercial` ,
 `NombreFiscal` ,
@@ -24,7 +24,8 @@ mysql_query("INSERT INTO  `auditoria`.`empresaauditora` (
 `Web`,
 `RFC`
 )
-VALUES (NULL , '$NombreComercial',  '$NombreFiscal',  '$Domicilio',  '$CiudadMunicipio',  '$CodigoPostal',  '$Pais', '$Telefono', '$Email', '$Web', '$RFC')",$connexion) 
+VALUES (NULL , '$NombreComercial',  '$NombreFiscal',  '$Domicilio',  '$CiudadMunicipio',  '$CodigoPostal',  
+'$Pais', '$Telefono', '$Email', '$Web', '$RFC')",$connexion) 
 or die ("Error al insertar datos en la tabla empresa auditora");		
  $error=mysql_error();
  
@@ -32,6 +33,6 @@ or die ("Error al insertar datos en la tabla empresa auditora");
  echo "No se realizo el registro correctamente";
  }else{
  
- header("location:index.php");
+ header("location:forNueEmpresaAuditora.php");
  }
  ?>

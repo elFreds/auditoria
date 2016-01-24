@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang=''>
 <head>
    <meta charset='utf-8'>
@@ -7,7 +8,7 @@
    <link rel="stylesheet" href="css/styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
-   <title>Capítulo 3</title>
+   <title>Capítulo 7</title>
 </head>
 <body>
    <div id="lateral">
@@ -61,23 +62,105 @@
    </li>
 </ul>
 </div>
+
 <br></br>
 
-
-<div id="cabecera">PONDERACION DE EVALUACION POR CAPITULO</div>
+<div id="cabecera">REGISTRAR NUEVO AUDITOR</div>
     <div id="texto">
-<p style=”text-align:justify;”> El capitulo es evaluado de acuerdo a las preguntas correspondientes y de acuerdo a la toma de desiciones se puede determinar si
-el capitulo es acreditado o en su defecto no acredita.</p>
-</p>
-<p style=”text-align:justify;”>
-Una vez evaluados todos los capitulos se determina si la auditoria realizada acredita o no, la forma de determinarlo es evaluando los resultados de cada capitulo,
-y asi poder entregar el dictamen final, que a su vez contendra informacion de la empresa auditora, la empresa auditada, el auditor responsable, fecha de inicio y final de la auditoria, asi como recomendacines y comentarios.</p>
-
-<center>
-<?php
-	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
+	<?php
+include("conexion.php");
 ?>
-</center>
+<?php
+$datos2=mysql_query("SELECT * FROM empresaauditora") or die ("No se puede consultar la tabla auditores");
+?>
+
+<script type="text/javascript" src="jvs/validarRegistroNuevoAuditor.js"></script>
+<form name="datos" method="POST" action="registrarNuevoAuditor.php">
+<br>
+	 <table border="4" cellpadding="3" cellspacing="3" width="0%" align="center">
+	 
+    <tr>
+        <td align="right"> Apellido Paterno: </td>
+	<td><input type="text" name="ApellidoPaterno" id="ApellidoPaterno"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Apellido Materno: </td>
+	<td><input type="text" name="ApellidoMaterno" id="ApellidoMaterno"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Nombre: </td>
+	<td><input type="text" name="Nombre" id="Nombre"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Edad: </td>
+	<td><input type="text" name="Edad" id="Edad"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Pais: </td>
+	<td><input type="text" name="Pais" id="Pais"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Ciudad Municipio: </td>
+	<td><input type="text" name="CiudadMunicipio" id="CiudadMunicipio"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Codigo Postal: </td>
+	<td><input type="text" name="CodigoPostal" id="CodigoPostal"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Calle Avenida: </td>
+	<td><input type="text" name="CalleAvenida" id="CalleAvenida"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Telefono: </td>
+	<td><input type="text" name="Telefono" id="Telefono"/></td>
+</tr>
+
+<tr>
+        <td align="right"> E-mail: </td>
+	<td><input type="text" name="Email" id="Email"/></td>
+</tr>
+
+<tr>
+        <td align="right"> Sexo: </td>
+	<td><input type="text" name="Sexo" id="Sexo"/></td>
+</tr>
+
+<tr>
+<td align="right"> Empresa  </td>
+<td><select name="id_EmpresaAuditora" id="id_EmpresaAuditora">
+<option value="0">Selecciona Empresa </option>
+<?php
+while($datosArray=mysql_fetch_assoc($datos2)){
+?>
+<option value="<?php echo $datosArray['id_EmpresaAuditora'];?>">
+	<?php echo $datosArray['NombreFiscal'];?>
+	</option>
+	<?php
+	}	
+	?>
+</select>
+</td>
+</tr>
+</table>
+
+<CENTER>
+	<?php
+	echo"<input type=\"button\"class=\"boton\"value=\"CANCELAR\"onclick=\"window.location.href='index.php';\">";
+	?>
+	</tr>
+	
+	<input type="button" value="REGISTRAR" class="boton" onclick="validaCampos();"/> 
+</CENTER>
+
  <br><br>
 
 </div>

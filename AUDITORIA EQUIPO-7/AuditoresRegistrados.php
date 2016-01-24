@@ -63,22 +63,70 @@
 </div>
 <br></br>
 
-
-<div id="cabecera">PONDERACION DE EVALUACION POR CAPITULO</div>
+<div id="cabecera">AUDITORES REGISTRADOS</div>
     <div id="texto">
-<p style=”text-align:justify;”> El capitulo es evaluado de acuerdo a las preguntas correspondientes y de acuerdo a la toma de desiciones se puede determinar si
-el capitulo es acreditado o en su defecto no acredita.</p>
-</p>
-<p style=”text-align:justify;”>
-Una vez evaluados todos los capitulos se determina si la auditoria realizada acredita o no, la forma de determinarlo es evaluando los resultados de cada capitulo,
-y asi poder entregar el dictamen final, que a su vez contendra informacion de la empresa auditora, la empresa auditada, el auditor responsable, fecha de inicio y final de la auditoria, asi como recomendacines y comentarios.</p>
+<?php  
+include("conexion.php");
+?>
+<?php
+$sql="SELECT * from auditores inner join empresaauditora on empresaauditora.id_EmpresaAuditora=auditores.id_EmpresaAuditora";
+$datos1=mysql_query($sql,$connexion);
 
+?>
+</br>
+</br>
+<table border="6" align="center">
+  <th> Apellido Paterno </th>
+  <th> Apellido Materno </th>
+  <th> Nombre </th>
+  <th> Edad </th>
+  <th> Pais </th>
+  <th> Ciudad Municipio </th>   
+  <th> Codigo Postal </th>
+  <th> Calle o Avenida </th>
+  <th> Telefono </th>
+  <th> Email </th>
+  <th> Sexo </th>
+  <th> Empresa Responsable de Auditor </th>
+  <th> Editar </th>
+  <th> Eliminar </th>
+    
+ <?php
+while($row=Mysql_Fetch_Array($datos1)) { 
+?>
+
+<tr>
+      <td> <?php echo $ApellidoPaterno=$row['ApellidoPaterno']; ?> </td>
+	  <td> <?php echo $ApellidoMaterno=$row['ApellidoPaterno']; ?> </td>	
+      <td> <?php echo $Nombre=$row['Nombre']; ?> </td>	
+      <td> <?php echo $Edad=$row['Edad']; ?> </td>	
+	  <td> <?php echo $Pais=$row['Pais'];?> </td>	  
+	  <td> <?php echo $CiudadMunicipio=$row['CiudadMunicipio'];?> </td> 
+	  <td> <?php echo $CodigoPostal=$row['CodigoPostal'];?> </td> 
+	  <td> <?php echo $CalleAvenida=$row['CalleAvenida'];?> </td>
+      <td> <?php echo $Telefono=$row['Telefono'];?> </td>
+	  <td> <?php echo $Email=$row['Email'];?> </td>
+	  <td> <?php echo $Sexo=$row['Sexo'];?> </td>
+	  <td> <?php echo $id_EmpresaAuditora=$row['NombreFiscal'];?> </td>
+	  <th><a href="formEditAuditor.php?id=<?php echo $id_emp=$row['id_audi'];?>">EDITAR</a></th>
+	  <th><a href="eliminarAuditor.php?id=<?php echo $id_emp=$row['id_audi'];?>">ELIMINAR</a></th>
+
+      
+	  <?php
+      }
+	  mysql_close($connexion);
+?>
+
+<br>
+</table>
+<br> 
+</center>
 <center>
 <?php
 	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
 ?>
 </center>
- <br><br>
+<br><br>
 
 </div>
 </div>

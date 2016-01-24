@@ -1,28 +1,116 @@
-<html>
- <head>
-  <title>  FUNDAMENTO TEORICO  </title>
-  <meta http-equiv=”Content-Type” content=”text/html; charset=iso-8859-2″>
-    <link rel="stylesheet" type="text/css" href="css/css.css"/>
- </head>
-<body style=”text-align:justify;”>
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="script.js"></script>
+   <title>Capítulo 7</title>
+</head>
+<body>
+   <div id="lateral">
+<div id='cssmenu'>
+<ul>   
+   <li><a href="index.php"><span> CAPÍTULO  #7</span></a></li>
+   <li class='has-sub'><a href=''><span> INFORMACIÓN SOBRE AUDITORÍA</span></a>
+     <ul>
+         <li class='has-sub'><a href=''><span>EMPRESAS AUDITORAS</span></a>
+            <ul>
+               <li><a href='forNueEmpresaAuditora.php'><span>REGISTRAR</span></a></li>
+               <li><a href='EmpresasAuditorasRegistradas.php'><span>CONSULTAR</span></a></li>
+            </ul>
+         </li>
+		 
+		 <li class='has-sub'><a href=''><span>EMPRESAS AUDITADAS</span></a>
+            <ul>
+               <li><a href='forNueEmpresa.php'><span>REGISTRAR</span></a></li>
+               <li><a href='EmpresasAuditadasRegistradas.php'><span>CONSULTAR</span></a></li>
+            </ul>
+         </li>
+		 
+		 <li class='has-sub'><a href=''><span>AUDITORES</span></a>
+            <ul>
+               <li><a href='forNueAuditor.php'><span>REGISTRAR</span></a></li>
+               <li><a href='AuditoresRegistrados.php'><span>CONSULTAR</span></a></li>
+            </ul>
+         </li>
+    
+		  <li class='has-sub'><a href=''><span>INFORMACIÓN POR CAPÍTULO</span></a>
+            <ul>
+               <li><a href='infocap3.php'><span>CAPÍTULO III</span></a></li>
+               <li><a href='infocap4.php'><span>CAPÍTULO IV</span></a></li>
+			   <li><a href='infocap5.php'><span>CAPÍTULO III</span></a></li>
+               <li><a href='infocap6.php'><span>CAPÍTULO V</span></a></li>
+			   <li><a href='dictamenfinal.php'><span>DICTAMEN FINAL DE LA AUDITORÍA</span></a></li>
+            </ul>
+         </li>
+         
+         </ul>
+          <li class='has-sub'><a href=""><span>TEORIA CAPÍTULO #7</span></a>
+            <ul>
+               <li><a href="FunTeoTema1.php"><span>TÉCNICAS PARA LA INTERPRETACIÓN DE LA INFORMACIÓN</span></a></li>
+               <li ><a href='FunTeoTema2.php' ><span>EVALUACIÓN DE LOS SISTEMAS</span></a></li>
+               <li ><a href='FunTeoTema3.php'><span>EVALUACIÓN DE LOS SISTEMAS DE INFORMACIÓN</span></a></li>
+               <li ><a href='FunTeoTema4.php'><span>CONTROLES</span></a></li>
+               <li ><a href='FunTeoTema5.php'><span>PRESENTACIÓN</span></a></li>
+			   <li ><a href='FunTeoPon.php'><span>PONDERACIÓN DE EVALUACIÓN POR CAPÍTULO</span></a></li>
+            </ul>
+         </li>          
+   </li>
+</ul>
+</div>
+<br></br>
 
-<hr>
-<center><h2>Evaluacion de los sistemas</h2></center>
-Se debe evaluar la informaccion obtenida en los sistemas para poder:
+
+<div id="cabecera">EVALUACIÓN DE LOS SISTEMAS</div>
+    <div id="texto">
+	</br>
+Se debe de evalauar el desarrollo que ha tenido el sistema mediante el análisis de los pasos 
+que comprendio el desarrollo del sistema, y comparar lo que se planeo contra lo que realmente se esta obteniendo.</br>
+
+<h2>ANÁLISIS</h3>
+Se debe evaluar la información obtenida en los sistemas para poder:
 <Ul type = disk >
 <li>Determinar el objetivo y compararlo con lo obtenido
-<li>Buscar la interrelaci´on con otros sistemas
-<li>Evaluar la secuencia y flujo de las interacciones<br><p>
+<li>Buscar la interrelación con otros sistemas
+<li>Evaluar la secuencia y flujo de las interacciones
+<li>Evaluar la satisfacción del usuario<br><p>
 
-Para esto se debe:
+Entre las etapas del análisis están:</p>
+1.- Análisis conceptual
+<ul>
+<li>Evaluar el sistema funcional</li>
+<li>evaluar la modulación del sistema</li>
+<li>Evaluar la segmetacion del sistema</li>
+<li>Evaluar la fregamentacion del sistema</li>
+<li>Evaluar la madurez del sistema</li>
+<li>Evaluar los objetivos particulares del sistema</li>
+<li>Evaluar el flujo actual de infromacion</li>
+<li>Definir el contenido de los reportes y compararlos con el objetivo</li></br>
+</ul>
+
+2.- Evaluar los modelos de reportes:
+<ul>
+<li>Evaluar los controles de operación</li>
+<li>Cuatificar el volumen de infromacion</li>
+<li>Evaluar la presentación y ajustes</li></br>
+</ul>
+
+Se debe de conocer los términos generales el nivel del sistema funcional 
+para obtener los elementos suficientes que permita evaluar el nivel de interaccion, estructuración y madurez del sistema.</p>
+
+Entre las evaluaciones que deben hacerse están:</p>
+
 <ol>
 <li>Evalue el objetivo
-Evalueel objetivo general y el alcance del sistema funcional en forma clara y precisa
-<li>Evaluela interaccion con otros sistemas
-Se debio analizas la informacion con el proposito de encontrar las interacciones y sus
-contactos con otros sistemas a fin de determinar si existe un sistema integral de informacion,
-sistemas asilados, o simplemente programas o si existe redundancia o ruido y
-si existen controles.
+Evalue el objetivo general y el alcance del sistema funcional en forma clara y precisa
+<li>Evalue la interacción con otros sistemas
+Evalúa la infromacion del sistema con el proposio de localizar sus inteacciones y sus 
+contactos con otros sistemas, a din de determinar si existe un sistema integral de infromacion, 
+sistemas aislados o simplemente programas o si existe  redundancia y ruido, asi como cuales 
+son los controles con que cuenta el sistema.
 <li>Evalue si se obtiene la secuencia y flujo de las interacciones
 Es necesario establecer el flujo de informacion a traves del sistema graficandolo de tal
 manera que refleje un periodo de tiempo asi como el orden de ocurrencia.
@@ -53,12 +141,22 @@ bloque, frecuencia de uso, campos, codigos, tamanos de los archivos.
 <li>Evaluacion de reportes
 Se evaluaran la infraestructura de salida de reportes, por ejemplo los programas que
 lo generan, los archivos usados, frecuencia. Usuario y contenido.
+<li>Pruebas y revisiones: 
+el objetivo es asegurarse que el sistema funcione de acuerdo con las especificaciones 
+funcionales a fin de que el usuario tenga la suficente informacion para su manejo, 
+operación y aceptación.
 </ol>
 
 <br> 
+<center>
 <?php
 	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
-	?>
-	
+?>
 </center>
-</html>
+ <br><br>
+
+
+</div>
+</div>
+</body>
+<html>

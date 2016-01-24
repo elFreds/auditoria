@@ -7,7 +7,7 @@
    <link rel="stylesheet" href="css/styles.css">
    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="script.js"></script>
-   <title>Capítulo 3</title>
+   <title>Capítulo 7</title>
 </head>
 <body>
    <div id="lateral">
@@ -64,20 +64,96 @@
 <br></br>
 
 
-<div id="cabecera">PONDERACION DE EVALUACION POR CAPITULO</div>
+<div id="cabecera">EDITAR EMPRESA AUDITORA</div>
     <div id="texto">
-<p style=”text-align:justify;”> El capitulo es evaluado de acuerdo a las preguntas correspondientes y de acuerdo a la toma de desiciones se puede determinar si
-el capitulo es acreditado o en su defecto no acredita.</p>
-</p>
-<p style=”text-align:justify;”>
-Una vez evaluados todos los capitulos se determina si la auditoria realizada acredita o no, la forma de determinarlo es evaluando los resultados de cada capitulo,
-y asi poder entregar el dictamen final, que a su vez contendra informacion de la empresa auditora, la empresa auditada, el auditor responsable, fecha de inicio y final de la auditoria, asi como recomendacines y comentarios.</p>
-
-<center>
 <?php
-	echo"<input type=\"button\"class=\"boton\"value=\"REGRESAR\"onclick=\"window.location.href='index.php';\">";
+include("conexion.php");
 ?>
+<?php
+$id=$_GET['id'];
+$result=mysql_query("SELECT * FROM empresaauditora where id_EmpresaAuditora=$id");
+$fila=mysql_fetch_array($result);
+?>
+<form  method="POST" action="editarEmpresaAuditora.php">
+</br>
+</br>
+
+ <table border="6" align="center">
+ <tr>
+      <td align="right"> Nombre Comercial: </td>
+	  <td><input name="NombreComercial" type="text" id="NombreComercial" value="<?php echo $fila['NombreComercial'];?>"/>
+	  </td>
+ </tr>
+
+<tr>
+      <td align="right"> Nombre Fiscal </td>
+	  <td><input name="NombreFiscal" type="text" id="NombreFiscal" value="<?php echo $fila['NombreFiscal'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Calle Avenida </td>
+	  <td><input name="Domicilio" type="text" id="Domicilio" value="<?php echo $fila['Domicilio'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Ciudad Municipio </td>
+	  <td><input name="CiudadMunicipio" type="text" id="CiudadMunicipio" value="<?php echo $fila['CiudadMunicipio'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Codigo Postal </td>
+	  <td><input name="CodigoPostal" type="text" id="CodigoPostal" value="<?php echo $fila['CodigoPostal'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Pais </td>
+	  <td><input name="Pais" type="text" id="Pais" value="<?php echo $fila['Pais'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Telefono </td>
+	  <td><input name="Telefono" type="text" id="Telefono" value="<?php echo $fila['Telefono'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> E-mail </td>
+	  <td><input name="Email" type="text" id="Email" value="<?php echo $fila['Email'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> Web </td>
+	  <td><input name="Web" type="text" id="Web" value="<?php echo $fila['Web'];?>"   />
+</td>
+</tr>
+
+<tr>
+      <td align="right"> RFC </td>
+	  <td><input name="RFC" type="text" id="RFC" value="<?php echo $fila['RFC'];?>"   />
+</td>
+</tr>
+
+<td>
+<input name="id" type="text" style="display:none" value="<?php echo $fila['id_EmpresaAuditora'];?>" />
+<td>
+</tr>
+</table>
+</br>
+</br>
+<center>
+	<?php
+	echo"<input type=\"button\"class=\"boton\"value=\"CANCELAR\"onclick=\"window.location.href='EmpresasAuditorasRegistradas.php';\">";
+	?>
+	<input type="submit" value="ACEPTAR" class="boton" onclick="validaCampos();"/> 
+	
 </center>
+
  <br><br>
 
 </div>
