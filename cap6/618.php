@@ -1,7 +1,7 @@
 <?php 
 include("css.php");
 include("conexion.php");
-mysql_set_charset('utf8');
+mysql_set_charset('utf-8');
 
 
 $result = mysql_query("SELECT id_preg, pregunt FROM preguntas WHERE id_subsr=618",$connexion); 
