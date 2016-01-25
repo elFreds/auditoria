@@ -16,7 +16,7 @@
     $actividades =  mysql_query("SELECT * FROM actividades",$conexion);
     $fechas =  mysql_query("SELECT * FROM fechas",$conexion);
     $auditores =  mysql_query("SELECT * FROM auditores",$conexion);
-    $empresas =  mysql_query("SELECT * FROM empresas",$conexion);
+    $empresas =  mysql_query("SELECT * FROM empresaauditora",$conexion);
 $asignacion = mysql_query("SELECT * FROM asignacion");
 		    ?>
 	</head>
@@ -128,8 +128,8 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 			while($arreglo6=mysql_fetch_array($auditores))
 			{
 			?>
-	<option value="<?php echo $arreglo6['auditor'];?>">
-			<?php echo $arreglo6['auditor'];?>
+	<option value="<?php echo $arreglo6['Nombre'];?>">
+			<?php echo $arreglo6['Nombre'];?>
 	</option>
 			<?php
 			}
@@ -144,8 +144,8 @@ $asignacion = mysql_query("SELECT * FROM asignacion");
 			while($arreglo7=mysql_fetch_array($empresas))
 			{
 			?>
-	<option value="<?php echo $arreglo7['empresa'];?>">
-			<?php echo $arreglo7['empresa'];?>
+	<option value="<?php echo $arreglo7['NombreFiscal'];?>">
+			<?php echo $arreglo7['NombreFiscal'];?>
 	</option>
 			<?php
 			}
