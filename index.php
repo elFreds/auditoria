@@ -18,7 +18,7 @@
 						<ul class="nav">
 							<li><a href="administracion.php">Administrar</a>
 							<li><a href="planeacion/planeacion.php" target="cont"><span>Planeacion de la auditoria</span></a>
-				                        <li><a href="capitulo_3/index.php" target="cont">Capítulo 3</a></li>
+				                        <li><a href="capitulo3/index.php" target="cont">Capítulo 3</a></li>
 					        <li><a href="capitulo4/capitulo4.php">Capitulo 4</a></li>
 							<li><a href="capitulo5/index.php">Capitulo 5</a></li>
 							<li><a href="cap6/sistema.php"  target ="cont">Capitulo 6 Evaluacion de la Seguridad</a></li>
