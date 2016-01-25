@@ -19,7 +19,11 @@
 							<li><a href="administracion.php">Administrar</a>
 							<li><a href="planeacion/planeacion.php" target="cont"><span>Planeacion de la auditoria</span></a>
 				                        <li><a href="capitulo3/index.php" target="cont">Capítulo 3</a></li>
-					        <li><a href="capitulo4/capitulo4.php">Capitulo 4</a></li>
+					        <li><a href="#"><span>Capitulo 4</span></a>
+<ul>
+         <li><a href="capitulo4/beta/auditar.php" target="cont"><span>Auditar</span></a></li>
+         <li><a href="capitulo4/beta/teoria.php" target="cont"><span>Teoria</span></a></li>   
+</ul>					  
 							<li><a href="capitulo5/index.php">Capitulo 5</a></li>
 							<li><a href="cap6/sistema.php"  target ="cont">Capitulo 6 Evaluacion de la Seguridad</a></li>
 							<li><a href="AUDITORIA EQUIPO-7/index.php" target ="cont">Capitulo 7 Interpretacion de la Informacion</a></li>
