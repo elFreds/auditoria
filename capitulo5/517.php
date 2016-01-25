@@ -62,7 +62,7 @@ background: #3498db;
   padding: 10px 20px 10px 20px;
   text-decoration: none;'
   width: 50px;' >
-<a href='616.php' style='color: #fff; font-family: Verdana; font-size: medium; ' >Regresar</a></td>
+<a href='516.php' style='color: #fff; font-family: Verdana; font-size: medium; ' >Regresar</a></td>
 
 <td  width='700'></td>
 
@@ -82,7 +82,7 @@ background: #3498db;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   width: 50px;' >
-  <a href='618.php' style='color: #fff; font-family: Verdana; font-size: medium; '>Siguiente</a></td>";
+  <a href='518.php' style='color: #fff; font-family: Verdana; font-size: medium; '>Siguiente</a></td>";
 echo "</table>";echo "<p>";
 
 echo "</form>";

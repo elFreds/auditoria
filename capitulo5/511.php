@@ -82,7 +82,7 @@ background: #3498db;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   width: 50px;' >
-  <a href='612.php' style='color: #fff; font-family: Verdana; font-size: medium; '>Siguiente</a></td>";
+  <a href='512.php' style='color: #fff; font-family: Verdana; font-size: medium; '>Siguiente</a></td>";
 echo "</table>";echo "<p>";
 
 echo "</form>";
