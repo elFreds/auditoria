@@ -97,7 +97,7 @@ while($row=Mysql_Fetch_Array($datos1)) {
 
 <tr>
       <td> <?php echo $ApellidoPaterno=$row['ApellidoPaterno']; ?> </td>
-	  <td> <?php echo $ApellidoMaterno=$row['ApellidoPaterno']; ?> </td>	
+	  <td> <?php echo $ApellidoMaterno=$row['ApellidoMaterno']; ?> </td>	
       <td> <?php echo $Nombre=$row['Nombre']; ?> </td>	
       <td> <?php echo $Edad=$row['Edad']; ?> </td>	
 	  <td> <?php echo $Pais=$row['Pais'];?> </td>	  
