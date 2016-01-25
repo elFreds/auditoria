@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
 		<title>PLANEACION</title>
 		<?php 
-    $conexion=  mysql_connect("127.0.0.1","taguevar_123","Hola123");
+    $conexion=  mysql_connect("http://tescha-aguevara.cidwebmex.com","taguevar_123","Hola123");
     mysql_select_db("taguevar_auditoria",$conexion);
     $capitulo =  mysql_query("SELECT * FROM rubros",$conexion);
     $temas =  mysql_query("SELECT * FROM temas",$conexion);
