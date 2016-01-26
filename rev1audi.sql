@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.0.4
 -- http://www.phpmyadmin.net
 --
@@ -1099,3 +1099,5 @@ INSERT INTO `temas` (`id_tema`, `tema`, `id_capitulo`) VALUES
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+INSERT INTO 'actividades' ('id_act', 'actividades') VALUES (1,'Planificacion',2, 'Elaboracion', 3, 'Ejecucion', 4, 'Evaluacion', 5 'Resultados', 6, 'Dictamen')

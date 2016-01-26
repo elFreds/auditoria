@@ -8,7 +8,7 @@
 <div id="cssmenu">
 <ul>
 <li><a href="#"><span> CAPITULO # 2</span></a>
- <li><a href="#"><span> PLANEACION DE LA AUDITORIA INFORMATICA</span></a>
+ <li><a href="planeacion.php"><span> PLANEACION DE LA AUDITORIA INFORMATICA</span></a>
 <li><li><li class="active has-sub"><a href="#"><span> FUNDAMENTO TEORICO</span></a>
 <ul>
          <li><a href="RevisionPreliminar.php" target="cont"><span>Revision preliminar</span></a></li>
@@ -19,11 +19,14 @@
          <li><a href="Sustantivas.php" target="cont"><span>Pruebas sustantivas</span></a></li>
             </ul>
          </li>
+<li><a href="cuestionario.php"><span> CUESTIONARIO</span></a>
 </div>
 <br><br>
 <div id="cabecera">Revision Detallada</div>
 <div id="texto"> 
 La revision detallada hace que el auditor tenga un profundo entendimiento de los controles usados dentro del area de informatica. El auditor debe de decidir si se continua elaborando pruebas de consentimiento, con la esperanza de obtener mayor confianza por medio del sistema de control interno, o proceder directamente a la revision con los usuarios (pruebas compensatorias) o a las pruebas sustantivas.  Aqui es importante identificar  las causas de las perdidas existentes; los metodos utilizados son los mismos  que la revision preliminar sino con un analisis mas profundo, luego el auditor debe evaluar si los controles escogidos son adecuados.
+El auditor debe de decidir se debe continuar elaborando pruevas de consentimeinto, con la esperanza de obtener mayor confianza por medio del sistema de controlinterno, o proceder directamente a a revision con los usuarios (pruevas compensatorias) o a las pruevas sustantivas.<br><br>
+Los objetivos de la fase detallada son los de obtener la información necesaria para que el auditor tenga un profundo entendimiento de los controles usados dentro del área de informática.En la fase de evaluación detallada es importante para el auditor identificar las causas de las pérdidas existentes dentro de la instalación y los controles para reducir las pérdidas y los efectos causados por éstas. Al terminar la revisión detallada el auditor debe evaluar en qué momento los controles establecidos reduce las pérdidas esperadas a un nivel aceptable. Los métodos de obtención de información al momento de la evaluación detallada son los mismos usados en la investigación preliminar, y lo único que difiere es la profundidad con se obtiene la información y se evalúa.
 </div>
 </body>
 </html>

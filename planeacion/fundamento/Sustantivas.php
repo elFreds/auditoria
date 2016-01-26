@@ -8,7 +8,7 @@
 <div id="cssmenu">
 <ul>
 <li><a href="#"><span> CAPITULO # 2</span></a>
- <li><a href="#"><span> PLANEACION DE LA AUDITORIA INFORMATICA</span></a>
+ <li><a href="planeacion.php"><span> PLANEACION DE LA <br> AUDITORIA INFORMATICA</span></a>
 <li><li><li class="active has-sub"><a href="#"><span> FUNDAMENTO TEORICO</span></a>
 <ul>
          <li><a href="RevisionPreliminar.php" target="cont"><span>Revision preliminar</span></a></li>
@@ -19,6 +19,7 @@
          <li><a href="Sustantivas.php" target="cont"><span>Pruebas sustantivas</span></a></li>
             </ul>
          </li>
+<li><a href="cuestionario.php"><span> CUESTIONARIO</span></a>
 </div>
 <br><br>
 <div id="cabecera">Pruebas Sustantivas</div>

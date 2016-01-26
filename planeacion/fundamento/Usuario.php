@@ -8,7 +8,7 @@
 <div id="cssmenu">
 <ul>
 <li><a href="#"><span> CAPITULO # 2</span></a>
- <li><a href="#"><span> PLANEACION DE LA AUDITORIA INFORMATICA</span></a>
+ <li><a href="planeacion.php"><span> PLANEACION DE LA <br> AUDITORIA INFORMATICA</span></a>
 <li><li><li class="active has-sub"><a href="#"><span> FUNDAMENTO TEORICO</span></a>
 <ul>
          <li><a href="RevisionPreliminar.php" target="cont"><span>Revision preliminar</span></a></li>
@@ -19,6 +19,7 @@
          <li><a href="Sustantivas.php" target="cont"><span>Pruebas sustantivas</span></a></li>
             </ul>
          </li>
+<li><a href="cuestionario.php"><span> CUESTIONARIO</span></a>
 </div>
 <br><br>
 <div id="cabecera">Pruebas de Control del Usuario</div>
@@ -27,7 +28,13 @@
 mediante entrevistas, examenes, encuestas etc, hechas para los usuarios.
 En algunos casos el auditor puede decidir el no confiar en los controles internos dentro de las instalaciones
 informaticas, por que el usuario ejerce controles que compensan cualquier debilidad dentro de los controles
-internos de informatica
+internos de informatica<br>
+El objetivo de esta fase es comprobar que los controles internos funcionan como lo deben de hacer, es decir, que los controles que se suponía que existían, existen realmente y funcionan bien. Las técnicas utilizadas, además de la recogida manual de evidencias ya descrita, contemplan el uso del ordenador para verificar los controles.<br>
+• Al final de la fase, el auditor puede decidir evaluar de nuevo el sistema de controles internos, de acuerdo con la fiabilidad que han mostrado los controles individuales.<br><br>
+• El procedimiento de evaluación y la elección de nuevos procedimientos de auditoria son los mismos que los de las fases anteriores.<br><br>
+Prueba y Evaluación de los Controles del Usuario
+El auditor puede decidir que no hace falta confiar en los controles internos porque existen controles del usuario que los sustituyen o compensan. Para un auditor externo, revisar estos controles del usuario puede resultar más costoso que revisar los controles internos. Para un auditor interno, es importante hacerlo para eliminar posibles controles duplicados, bien internos o bien del usuario, para evitar la redundancia. 
+
 </div>
 </body>
 </html>

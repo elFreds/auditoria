@@ -8,7 +8,7 @@
 <div id="cssmenu">
 <ul>
 <li><a href="#"><span> CAPITULO # 2</span></a>
- <li><a href="#"><span> PLANEACION DE  AUDITORIA INFORMATICA</span></a>
+ <li><a href="planeacion.php"><span> PLANEACION DE  AUDITORIA INFORMATICA</span></a>
 <li><li><li class="active has-sub"><a href="#"><span> FUNDAMENTO TEORICO</span></a>
 <ul>
          <li><a href="RevisionPreliminar.php" target="cont"><span>Revision preliminar</span></a></li>
@@ -19,6 +19,7 @@
          <li><a href="Sustantivas.php" target="cont"><span>Pruebas sustantivas</span></a></li>
             </ul>
          </li>
+<li><a href="cuestionario.php"><span> CUESTIONARIO</span></a>
 </div>
 <br><br>
 <div id="cabecera">Revision Preliminar</div>
@@ -33,7 +34,9 @@
 3.    Seguir directamente a obtener evidencias suficientes para tomar una decisión final sobre si puede ocurrir perdidas. Si no se confía en los controles internos, puede ser menos costoso realizar directamente los Test de Apoyo.<br> 
 <br>
 la revision preliminar recolecta informacion por medio de entrevistas con el personal de la instalacion
-, la observacion de las actividades en la instalacion y la revision de la documentacion preliminar
+, la observacion de las actividades en la instalacion y la revision de la documentacion preliminar<br>
+En esta fase el auditor debe de armarse de un conocimiento amplio del área que va a auditar, los objetivos que debe cumplir, tiempos (una empresa no pude dejar sus equipos y personal que lo opera sin trabajar porque esto le genera perdidas sustanciosas), herramientas y conocimientos previos, así como de crear su equipo de auditores expertos en la materia con el fin de evitar tiempos muertos a la hora de iniciar la auditoria.
+Es de tomarse en cuenta que el propietario de dicha empresa, ordena una auditoria cuando siente que un área tiene una falla o simplemente no trabaja productivamente como se sugiere, por esta razón habrá puntos claves que se nos instruya sean revisados, hay que recordar que las auditorias parten desde un ámbito administrativo y no solo desde la parte tecnológica, porque al fin de cuentas hablamos de tiempo y costo de producción, ejercicio de ventas, etc. Es decir, todo aquello que representa un gasto para la empresa.
 	
 </div>
 </body>
