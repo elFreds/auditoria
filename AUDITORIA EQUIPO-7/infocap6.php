@@ -64,7 +64,7 @@
 <br></br>
 
 
-<div id="cabecera">INFORMACIÓN CAPITULO III</div>
+<div id="cabecera">INFORMACIÓN CAPITULO VI</div>
     <div id="texto">
 </br>
 
@@ -74,7 +74,7 @@ mysql_set_charset('utf8');
 $sql="SELECT * FROM dictamen where id_Dictamen=1";
 $datos=mysql_query($sql,$connexion); 
 
-$sql="SELECT * FROM rubros where id_rubro=3";
+$sql="SELECT * FROM rubros where id_rubro=6";
 $datos1=mysql_query($sql,$connexion); 
 
 $sql="SELECT * FROM empresas where id_emp=1";
@@ -83,7 +83,7 @@ $datos2=mysql_query($sql,$connexion);
 $sql="SELECT * FROM auditores where id_audi=1";
 $datos3=mysql_query($sql,$connexion); 
 
-$sql="SELECT * FROM dictamencapitulo where id_DictamenCapitulo=1";
+$sql="SELECT * FROM dictamencapitulo where id_DictamenCapitulo=4";
 $datos4=mysql_query($sql,$connexion); 
 ?>
 
@@ -149,7 +149,7 @@ INNER JOIN respuestas ON respuestas.id_resp = asignarresp.idRespuesta
 INNER JOIN rubros ON rubros.id_rubro=preguntas.id_rubro
 INNER JOIN subrubro ON subrubro.id_subr=preguntas.id_subr
 INNER JOIN subsubrubro ON subsubrubro.id_subsr=preguntas.id_subsr
-WHERE preguntas.id_rubro=3 ORDER BY preguntas.id_preg ASC";
+WHERE preguntas.id_rubro=5 ORDER BY preguntas.id_preg ASC";
 $datos5=mysql_query($sql5,$connexion); 
 ?>
 <table border="6" align="center">

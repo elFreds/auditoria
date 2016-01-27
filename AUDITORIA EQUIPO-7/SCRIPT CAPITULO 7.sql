@@ -124,14 +124,14 @@ CREATE TABLE IF NOT EXISTS `auditores` (
   `Email` varchar(35) NOT NULL,
   `Sexo` varchar(9) NOT NULL,
   `id_emp` int(11) NOT NULL,
-  PRIMARY KEY (`id_audi`)
+  PRIMARY KEY (`id_EmpresaAuditora`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=6;
 
 --
 -- Volcado de datos para la tabla `auditores`
 --
 
-INSERT INTO `auditores` (`id_audi`, `ApellidoPaterno`, `ApellidoMaterno`,`Nombre`, `Edad`, `Pais`, `CiudadMunicipio`, `CodigoPostal`, `CalleAvenida`, `Telefono`, `Email`, `Sexo`, `id_emp`) VALUES
+INSERT INTO `auditores` (`id_audi`, `ApellidoPaterno`, `ApellidoMaterno`,`Nombre`, `Edad`, `Pais`, `CiudadMunicipio`, `CodigoPostal`, `CalleAvenida`, `Telefono`, `Email`, `Sexo`, `id_EmpresaAuditora`) VALUES
 (1, 'Avaroa', 'Garcia', 'Javier', 21, 'Mexico', 'Tepetlixpa Estado de Mexico', '56880', 'Avenida Guerrero #34', '5546938723', 'javier@gmail.com', 'Masculino', 1),
 (2, 'Villegas', 'Fernandez', 'Abigail', 21, 'Mexico', 'Chalco Estado de Mexico', '54670', 'Avenida Ferrocarril #21', '5543563214', 'abigail@gmail.com', 'Femenino', 1),
 (3, 'Castillo', 'Hernandez', 'Roberto Carlos', 22, 'Mexico', 'Tepetlixpa Estado de Mexico', '56880', 'Calle Felipe Angeles #12', '5587230944', 'skimo@gmail.com', 'Masculino', 1),
