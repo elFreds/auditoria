@@ -41,8 +41,8 @@
             <ul>
                <li><a href='infocap3.php'><span>CAPÍTULO III</span></a></li>
                <li><a href='infocap4.php'><span>CAPÍTULO IV</span></a></li>
-			   <li><a href='infocap5.php'><span>CAPÍTULO III</span></a></li>
-               <li><a href='infocap6.php'><span>CAPÍTULO V</span></a></li>
+			   <li><a href='infocap5.php'><span>CAPÍTULO V</span></a></li>
+               <li><a href='infocap6.php'><span>CAPÍTULO VI</span></a></li>
 			   <li><a href='dictamenfinal.php'><span>DICTAMEN FINAL DE LA AUDITORÍA</span></a></li>
             </ul>
          </li>
