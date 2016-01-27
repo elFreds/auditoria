@@ -8,9 +8,9 @@
         $empresa=$_POST['nomemp'];
              
         
-        $conexion=mysql_connect("127.1.1.0","root","")or die("ERROR DE CONEXION");
+        $conexion=mysql_connect("http://tescha-aguevara.cidwebmex.com","taguevar_123","Hola123*")or die("ERROR DE CONEXION");
 
-mysql_select_db("auditoria",$conexion) or die ("errror al conectar con la base de datos");
+mysql_select_db("taguevar_auditoria",$conexion) or die ("errror al conectar con la base de datos");
 mysql_query("INSERT INTO asignacion (capitulo,tema,subtema,actividad,tiempo,nom_audi,emp_auditora) 
 	values ( '$capitulo', '$tema', '$subtema', '$actividad', '$fechas','$auditor','$empresa')", $conexion) or die ("ERROR AL INSERTAR DATOS");
 
